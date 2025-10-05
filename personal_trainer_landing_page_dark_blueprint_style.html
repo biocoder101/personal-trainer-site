@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean Bulk Blueprint — Personal Training</title>
+  <style>
+    :root {
+      --bg: #0e0b20;
+      --text: #f0f0ff;
+      --muted: #b2b2c8;
+      --accent: #7c5cff;
+      --radius: 16px;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .container { max-width: 1080px; margin: 0 auto; padding: 40px 24px; }
+    h1, h2, h3 { margin: 0 0 12px; }
+    a { color: inherit; text-decoration: none; }
+    .btn {
+      background: var(--accent);
+      padding: 14px 22px;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: 700;
+      cursor: pointer;
+      color: #fff;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    /* HERO */
+    .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; }
+    .hero-text { flex: 1; min-width: 300px; }
+    .hero-placeholder { flex: 1; min-width: 300px; background: #171534; border-radius: var(--radius); height: 420px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 1rem; box-shadow: var(--shadow); }
+
+    /* SECTIONS */
+    section { padding: 80px 0; border-bottom: 1px solid #1d1a35; }
+    .muted { color: var(--muted); }
+
+    /* GRID */
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .card { background: #171534; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+    .placeholder-img { background: #2a2750; border-radius: var(--radius); height: 360px; display: flex; align-items: center; justify-content: center; color: #8b88c0; }
+
+    /* CTA */
+    .cta { background: linear-gradient(180deg, #1d1a45, #141231); border-radius: var(--radius); padding: 40px; text-align: center; box-shadow: var(--shadow); }
+  </style>
+</head>
+<body>
+  <header class="container hero">
+    <div class="hero-text">
+      <h1>Build Lean Muscle This Winter <u>Without Gaining Fat</u></h1>
+      <p class="muted">Get a personalized audit of your training, nutrition, and recovery — discover exactly what’s holding you back and how to fix it.</p>
+      <button class="btn">GET YOUR FREE AUDIT</button>
+    </div>
+    <div class="hero-placeholder">[Your Portrait or Explainer Video]</div>
+  </header>
+
+  <section class="container" id="pain">
+    <h2>Tired of Bulking and Getting Softer?</h2>
+    <p class="muted">Most lifters overeat, under-recover, and lose definition in winter. Learn how to gain muscle without unnecessary fat.</p>
+  </section>
+
+  <section class="container" id="value-props">
+    <h2>The 3-Phase System</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>1. Foundation</h3>
+        <p class="muted">We lock in your calories, protein targets, and training volume.</p>
+      </div>
+      <div class="card">
+        <h3>2. Progressive Gain</h3>
+        <p class="muted">Weekly progressions with micro-surplus to ensure lean growth.</p>
+      </div>
+      <div class="card">
+        <h3>3. Recomp Guardrails</h3>
+        <p class="muted">Mini-cuts and data feedback to maintain optimal body composition.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="results">
+    <h2>Client Transformations</h2>
+    <p class="muted">Before-and-after images to demonstrate proof of results.</p>
+    <div class="grid-3">
+      <div class="card placeholder-img">[Before / After 1]</div>
+      <div class="card placeholder-img">[Before / After 2]</div>
+      <div class="card placeholder-img">[Before / After 3]</div>
+    </div>
+  </section>
+
+  <section class="container" id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="grid-3">
+      <div class="card"><p>“I gained 10 lbs of muscle and stayed lean through winter.”</p><p class="muted">— Alex R.</p></div>
+      <div class="card"><p>“No fluff. Simple, effective, sustainable.”</p><p class="muted">— Jen M.</p></div>
+      <div class="card"><p>“The audit exposed everything I was doing wrong — game changer.”</p><p class="muted">— Chris D.</p></div>
+    </div>
+  </section>
+
+  <section class="container" id="faq">
+    <h2>FAQ</h2>
+    <div class="grid-3">
+      <div class="card"><h3>Is the audit free?</h3><p class="muted">Yes. 100% free, no credit card required.</p></div>
+      <div class="card"><h3>What do I need?</h3><p class="muted">Your current routine, meals, and weekly schedule.</p></div>
+      <div class="card"><h3>Who is this for?</h3><p class="muted">Anyone trying to gain lean muscle while keeping body fat low.</p></div>
+    </div>
+  </section>
+
+  <section class="container cta" id="apply">
+    <h2>Start Your Free Audit Now</h2>
+    <p class="muted">Takes 2 minutes. No commitments. Real feedback that gets results.</p>
+    <button class="btn">APPLY NOW</button>
+  </section>
+</body>
+</html>
